@@ -1,9 +1,16 @@
-# development/k8s-tick  
-This repo is for deploying:  
+# telegraf-tick-k8s  
+  
+This repo contains relevant information for deploying tick stack on kubernetes with:    
 * influxdb  
 * kapacitor  
 * telegraf  
 * chronograf  
+  
+This deployment is simple and just meant to get the tick stack up and running quickly with a LB front-end  
+All the persistent volumes use local storage and require about 30GB to work correctly.  
+  
+It's based on this deployment:  
+https://vinta.ws/code/deploy-tick-stack-on-kubernetes-telegraf-influxdb-chronograf-and-kapacitor.html  
   
 Deploy in the following order:  
   
