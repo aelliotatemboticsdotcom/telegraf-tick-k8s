@@ -9,6 +9,11 @@ This repo contains relevant information for deploying tick stack on kubernetes w
 This deployment is simple and just meant to get the tick stack up and running quickly with a LB front-end  
 All the persistent volumes use local storage and require about 30GB to work correctly.  
   
+You'll need the following directories (on each k8s host) created if you're using local storage:  
+/mnt/data  
+/mnt/kap  
+/mnt/chrono  
+  
 It's based on this deployment:  
 https://vinta.ws/code/deploy-tick-stack-on-kubernetes-telegraf-influxdb-chronograf-and-kapacitor.html  
   
