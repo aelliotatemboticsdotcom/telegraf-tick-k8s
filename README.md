@@ -1,5 +1,6 @@
-# development/k8s-tick  
-This repo is for deploying:  
+# telegraf-tick-k8s  
+  
+This repo contains relevant information for deploying tick stack on kubernetes with:    
 * influxdb  
 * kapacitor  
 * telegraf  
