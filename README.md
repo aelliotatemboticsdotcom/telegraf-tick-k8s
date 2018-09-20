@@ -16,10 +16,10 @@ Deploy in the following order:
   
 kubectl create -f all the pv files  
 kubectl create -f all the service files  
-kubectl create -f influx-statefulset.yaml  
-kubectl create -f telegraf-statefulset.yaml  
-kubectl create -f kapacitor-statefulset.yaml  
-kubectl create -f chrono-statefulset.yaml  
+kubectl create -f influxdb/influx-statefulset.yaml  
+kubectl create -f telegraf/telegraf-statefulset.yaml  
+kubectl create -f kapacitor/kapacitor-statefulset.yaml  
+kubectl create -f chronograf/chrono-statefulset.yaml  
   
 connect to influxdb:  
 kubectl exec -i -t influxdb-0 --namespace tick -- influx  
