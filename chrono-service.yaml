@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: tick
+  name: chronograf-ss
+spec:
+  clusterIP: None
+  selector:
+    app: chronograf
+---
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: tick
+  name: chronograf
+spec:
+  type: LoadBalancer
+  externalIPs:
+  - EXTERNALIPMASTER
+  selector:
+    app: chronograf
+  ports:
+  - name: api
+    port: 88
+    targetPort: api
